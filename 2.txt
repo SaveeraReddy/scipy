@@ -1,0 +1,6 @@
+#minimize the function x^2 + x+2 with BFGS
+from scipy.optimize import minimize
+def eqn(x):
+  return x**2 + x + 2   # find global minima ,first it find the 1drivate and then find the x value and 2 derivate we get the x value if x <0 global minima subtitute in equation
+mymin=minimize(eqn,0,method='BFGS')
+print(mymin)

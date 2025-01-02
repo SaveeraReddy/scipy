@@ -1,0 +1,7 @@
+#eliminate the duplicates
+import numpy as np
+from scipy.sparse import csr_matrix
+arr=np.array([[0,0,0],[0,0,1],[1,0,2]]) #compressed sparse row ,,it first remove all the zero elements and then give the matrix,adv is for large data to remove the duplicates
+mat=csr_matrix(arr)
+mat.sum_duplicates()
+print(mat)
