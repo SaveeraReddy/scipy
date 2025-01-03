@@ -1,0 +1,7 @@
+#depth first order
+import numpy as np
+from scipy.sparse.csgraph import depth_first_order
+from scipy.sparse import csr_matrix
+a=np.array([[0,1,0,1],[1,1,1,1],[2,1,1,0,],[0,1,0,1]])
+n=csr_matrix(a)
+print(depth_first_order(n,1))
