@@ -1,0 +1,5 @@
+#exporting array var name"vec"
+from scipy import io
+import numpy as np
+arr=np.arange(10)
+io.savemat('/content/gdrive/My Drive/Colab Notebooks/my data/matlab/arr.mat',{"vec":arr})

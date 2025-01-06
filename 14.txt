@@ -1,0 +1,6 @@
+#hamming distance
+from scipy.spatial.distance import hamming
+a=(True,False,True)
+b=(False,True,True)
+res=hamming(a,b)
+print(res)

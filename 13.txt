@@ -1,0 +1,6 @@
+#cosine dis cosine angle b/w a and b
+from scipy.spatial.distance import cosine
+a=(1,0)
+b=(10,2)
+res=cosine(a,b)
+print(res)
