@@ -1,0 +1,8 @@
+#spline interpolation -the points are fitted against a piecewise function defined with polynomial called splines
+from scipy.interpolate import UnivariateSpline
+import numpy as np
+xs=np.array([1,2,3,4,5])
+ys=xs**2+np.sin(xs) +1
+interp_func=UnivariateSpline(xs,ys)
+newarr=interp_func(np.array([2,3,0.1]))
+print(newarr)

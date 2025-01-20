@@ -1,0 +1,6 @@
+#scipy fftpack -- dft is a mathmetical technique which is used in converting spatial data into frequency data
+#cal fourier transform using the fftpack
+from scipy.fftpack import fft
+x=np.array([1.0,2.0,1.0,-1.0,1.5])
+y=fft(x)
+print(y)

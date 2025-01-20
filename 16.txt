@@ -1,0 +1,5 @@
+#reading data from a matlab file
+from scipy import io
+import numpy as np
+data=io.loadmat('/content/gdrive/My Drive/Colab Notebooks/my data/matlab/arr.mat')
+print(data['vec'])
